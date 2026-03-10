@@ -41,14 +41,14 @@ body {
 .title__container {
     color: var(--font-color);
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
     justify-items: center;
-    align-content: center;
-    font-size: 3.5rem;
+    font-size: min(3.2rem, 12dvw - 1rem);
 
     & .greeting {
-        font-size: 6rem;
+        align-self: end;
+        font-size: min(6rem, 24dvw - 1.5rem);
         font-family: var(--title-font), sans-serif;
     }
 
