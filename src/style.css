@@ -7,7 +7,6 @@
 body {
     position: relative;
     min-height: 100dvh;
-    display: grid;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./background.jpg");
     background-size: cover;
     background-position: center center;
@@ -17,10 +16,12 @@ body {
 }
 
 .header__container {
-    
+
     & .nav__container {
         padding: 1em;
         display: flex;
+        max-width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 12px;
