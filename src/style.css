@@ -35,3 +35,28 @@ body {
         }
     }
 }
+
+
+.title__container {
+    color: var(--font-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    font-size: 3.5rem;
+
+    & .greeting {
+        font-size: 6rem;
+        font-family: var(--title-font), sans-serif;
+    }
+
+    & button {
+        color: var(--font-color);
+        border-radius: 32px;
+        padding: 0.2em 0.4em;
+        border: var(--font-color) solid 5px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
