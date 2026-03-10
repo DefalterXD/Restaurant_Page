@@ -15,3 +15,23 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     font-family: var(--main-font), sans-serif;
 }
+
+.header__container {
+    
+    & .nav__container {
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        
+        & button {
+            color: var(--font-color);
+            padding: 0.6em 1.2em;
+            font-size: 2rem;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
