@@ -4,3 +4,9 @@
     --font-color: #fff;
 }
 
+body {
+    position: relative;
+    min-height: 100dvh;
+    display: grid;
+    font-family: var(--main-font), sans-serif;
+}
