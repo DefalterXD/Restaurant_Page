@@ -100,3 +100,63 @@ body {
     }
 
 }
+
+
+.main__container,
+.drinks__container,
+.deserts__container {
+    max-width: 80%;
+    padding: 2em 0;
+
+    & .menu {
+        display: grid;
+        border: 5px solid var(--accent-color);
+        border-radius: 8px;
+        min-height: 650px;
+        width: min(80dvw, 650px);
+        padding: 1.5em;
+        font-size: min(4dvw + 5%, var(--desc-size));
+        gap: 24px;
+    }
+
+    & .title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+    }
+
+    & .title::before,
+    .title::after {
+        content: '';
+        height: 1px;
+        width: 25px;
+        border: 2px solid var(--font-color);
+    }
+
+    & .food {
+        max-height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-bottom: 1px solid var(--font-color);
+    }
+
+    & .food:hover {
+        color: var(--accent-color);
+        border-bottom: 1px solid var(--accent-color);
+        cursor: pointer;
+    }
+
+    & .food:hover > .fill {
+        border-bottom: 5px dotted var(--accent-color);
+    }
+
+    & .fill {
+        height: var(--desc-size);
+        border-bottom: 5px dotted var(--font-color);
+        flex-grow: 1;
+    }
+}
