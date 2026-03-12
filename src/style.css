@@ -79,3 +79,10 @@ body {
         cursor: pointer;
     }
 }
+
+.menu__title,
+.about__title {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0.8em 0;
+}
