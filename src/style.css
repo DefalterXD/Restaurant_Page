@@ -34,7 +34,9 @@ body {
         justify-content: center;
         align-items: center;
         gap: 12px;
-        
+        background-color: var(--main-color);
+        border-bottom: 4px solid var(--accent-color);
+
         & button {
             color: var(--font-color);
             padding: 0.6em 1.2em;
@@ -43,6 +45,11 @@ body {
             border: none;
             cursor: pointer;
         }
+
+        & button:hover {
+            color: var(--accent-color);
+        }
+
     }
 }
 
