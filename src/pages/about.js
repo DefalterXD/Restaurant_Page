@@ -24,5 +24,9 @@ const contactData = {
     ]
 };
 
+const createAboutPage = function createAboutPageWithinTheContent() {
+    mainNodes.body.style.backgroundImage = '';
+
+}
 
 export { createAboutPage };
