@@ -37,6 +37,11 @@ const contactContainer = createCard(contactData);
 const createAboutPage = function createAboutPageWithinTheContent() {
     mainNodes.body.style.backgroundImage = '';
 
+    cardsContainer.append(workContainer, locationContainer, contactContainer);
+    
+    about.append(aboutImg, cardsContainer);
+    
+    mainNodes.content.divContent.append(aboutTitle, about);
 }
 
 export { createAboutPage };
