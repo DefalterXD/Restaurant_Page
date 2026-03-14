@@ -76,10 +76,16 @@ const desertsMenuData = {
     }],
 };
 
+const menuTitle = ElementObj.createDOM(new ElementObj("h1", "menu__title", 'Our menu'));
+const menu = ElementObj.createDOM(new ElementObj("section", "menu__container"));
+
+
 
 const createMenuPage = function createMenuPageWithinTheContent() {
     mainNodes.body.style.backgroundImage = '';
 
+    
+    
 }
 
 export { createMenuPage };
