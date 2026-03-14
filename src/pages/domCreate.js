@@ -39,5 +39,40 @@ class ElementImg extends ElementObj {
     }
 }
 
+const createMenu = function createMenuBasedOnObjectsInfo(menuObj) {
+    const ul = document.createElement('ul');
+    ul.classList.add('menu');
+    
+    const menuTitle = document.createElement('h2');
+    menuTitle.classList.add('title');
+    menuTitle.textContent = menuObj.title;
 
-export { mainNodes, ElementObj, ElementImg };
+    const listOfItems = [];
+    
+    menuObj.menu.forEach((element) => {
+        const li = document.createElement('li');
+        li.classList.add('food');
+
+        const foodTitleElement = document.createElement('span');
+        foodTitleElement.classList.add('food__title');
+        foodTitleElement.textContent = element.foodTitle;
+
+        const foodFillElement = document.createElement('div');
+        foodFillElement.classList.add('fill');
+
+        const foodPriceElement = document.createElement('span');
+        foodPriceElement.classList.add('food__price');
+        foodPriceElement.textContent = element.foodPrice;
+
+        li.append(foodTitleElement, foodFillElement, foodPriceElement);
+
+        listOfItems.push(li);
+    });
+
+    ul.append(menuTitle, ...listOfItems);
+
+    return ul;
+}
+
+
+export { mainNodes, ElementObj, ElementImg, createMenu };
