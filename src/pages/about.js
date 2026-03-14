@@ -29,6 +29,9 @@ const about = ElementObj.createDOM(new ElementObj("section", "about__container")
 const cardsContainer = ElementObj.createDOM(new ElementObj("div", "cards__container"));
 const aboutImg = ElementImg.createDOM(new ElementImg("img", "about__img", "", restaurantImg, 'Restaurant preview picture'));
 
+const workContainer = createCard(workData);
+const locationContainer = createCard(locationData);
+const contactContainer = createCard(contactData);
 
 
 const createAboutPage = function createAboutPageWithinTheContent() {
