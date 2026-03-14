@@ -9,5 +9,20 @@ const mainNodes = {
     },
 };
 
+class ElementObj {
+    constructor(elType, elClass, elText) {
+        this.elType = elType;
+        this.elClass = elClass;
+        this.elText = elText;
+    }
 
-export { mainNodes };
+    static createDOM(el) {
+        const element = document.createElement(`${el.elType}`);
+        element.classList.add(`${el.elClass}`);
+        element.textContent = el.elText;
+        return element;
+    }
+}
+
+
+export { mainNodes, ElementObj };
