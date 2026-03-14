@@ -74,5 +74,25 @@ const createMenu = function createMenuBasedOnObjectsInfo(menuObj) {
     return ul;
 }
 
+const createCard = function createCardForAboutPage(cardObj) {
+    const cardContainer = document.createElement('div');
+    cardContainer.classList.add('card');
 
-export { mainNodes, ElementObj, ElementImg, createMenu };
+    const cardTitle = document.createElement('h3');
+    cardTitle.textContent = cardObj.title;
+
+    const listOfItems = [];
+
+    cardObj.info.forEach((element) => {
+        const span = document.createElement('span');
+        span.classList.add(`${element.class}`);
+        span.textContent = element.text;
+        listOfItems.push(span);
+    });
+
+    cardContainer.append(cardTitle, ...listOfItems);
+
+    return cardContainer;
+}
+
+export { mainNodes, ElementObj, ElementImg, createMenu, createCard };
