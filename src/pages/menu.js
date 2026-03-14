@@ -83,6 +83,10 @@ const mainMenuContainer = ElementObj.createDOM(new ElementObj("div", "main__cont
 const mainMenu = createMenu(mainMenuData);
 const mainMenuImgElement = ElementImg.createDOM(new ElementImg("img", "menu__img", "", mainMenuImg, 'Main course menu'));
 
+const drinkMenuContainer = ElementObj.createDOM(new ElementObj("div", "drinks__container"));
+const drinkMenu = createMenu(drinksMenuData);
+const drinkMenuImgElement = ElementImg.createDOM(new ElementImg("img", "menu__img", "", drinkMenuImg, 'Drinks menu'));
+
 
 
 const createMenuPage = function createMenuPageWithinTheContent() {
