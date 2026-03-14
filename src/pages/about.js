@@ -24,6 +24,13 @@ const contactData = {
     ]
 };
 
+const aboutTitle = ElementObj.createDOM(new ElementObj("h1", "about__title", 'About'));
+const about = ElementObj.createDOM(new ElementObj("section", "about__container"));
+const cardsContainer = ElementObj.createDOM(new ElementObj("div", "cards__container"));
+const aboutImg = ElementImg.createDOM(new ElementImg("img", "about__img", "", restaurantImg, 'Restaurant preview picture'));
+
+
+
 const createAboutPage = function createAboutPageWithinTheContent() {
     mainNodes.body.style.backgroundImage = '';
 
