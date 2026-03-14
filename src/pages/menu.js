@@ -1,0 +1,81 @@
+import { mainNodes, ElementObj, createMenu, ElementImg } from "./domCreate.js";
+
+const mainMenuData = {
+    title: 'Main Course',
+    menu: [{
+        foodTitle: 'Steak',
+        foodPrice: '$12.20'
+    },
+    {
+        foodTitle: 'Lobster',
+        foodPrice: '$20.00'
+    },
+    {
+        foodTitle: 'Fish',
+        foodPrice: '$15.50',
+    },
+    {
+        foodTitle: 'Barbecue',
+        foodPrice: '$25.00'
+    },
+    {
+        foodTitle: 'Spaghetti',
+        foodPrice: '$20.00'
+    }],
+};
+
+const drinksMenuData = {
+    title: 'Drinks',
+    menu: [{
+        foodTitle: 'Orange Juice',
+        foodPrice: '$4.20'
+    },
+    {
+        foodTitle: 'Apple Juice',
+        foodPrice: '$4.20'
+    },
+    {
+        foodTitle: 'Lemon-Lime Juice',
+        foodPrice: '$4.20',
+    },
+    {
+        foodTitle: 'Mango Juice',
+        foodPrice: '$5.50'
+    },
+    {
+        foodTitle: 'Hot Chocolate',
+        foodPrice: '$3.00'
+    }],
+};
+
+const desertsMenuData = {
+    title: 'Deserts',
+    menu: [{
+        foodTitle: 'Cheesecake',
+        foodPrice: '$16.00'
+    },
+    {
+        foodTitle: 'Chocolate lava cake',
+        foodPrice: '$15.00'
+    },
+    {
+        foodTitle: 'Blueberry Muffin',
+        foodPrice: '$10.00',
+    },
+    {
+        foodTitle: 'Banana Nut Muffin',
+        foodPrice: '$10.00'
+    },
+    {
+        foodTitle: 'Vanilla Ice Cream',
+        foodPrice: '$15.00'
+    }],
+};
+
+
+const createMenuPage = function createMenuPageWithinTheContent() {
+    mainNodes.body.style.backgroundImage = '';
+
+}
+
+export { createMenuPage };
