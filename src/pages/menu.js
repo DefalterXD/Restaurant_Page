@@ -1,4 +1,8 @@
 import { mainNodes, ElementObj, createMenu, ElementImg } from "./domCreate.js";
+import mainMenuImg from "../img/main__menu.jpg";
+import drinkMenuImg from "../img/drinks__menu.jpg";
+import desertMenuImg from "../img/deserts__menu.jpg";
+
 
 const mainMenuData = {
     title: 'Main Course',
