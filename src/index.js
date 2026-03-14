@@ -1,7 +1,7 @@
 import "./reset.css";
 import "./style.css";
 import { mainNodes } from "./pages/domCreate.js";
-import { createHomePage } from "./pages/home.js";
+import { createHomePage, homeMenuButton } from "./pages/home.js";
 import { createMenuPage } from "./pages/menu.js";
 import { createAboutPage } from "./pages/about.js";
 
@@ -22,5 +22,9 @@ mainNodes.nav.addEventListener('click', (e) => {
     }
 });
 
+homeMenuButton.addEventListener('click', () => {
+    mainNodes.content.clear();
+    createMenuPage();
+});
 
 createHomePage();
