@@ -79,6 +79,10 @@ const desertsMenuData = {
 const menuTitle = ElementObj.createDOM(new ElementObj("h1", "menu__title", 'Our menu'));
 const menu = ElementObj.createDOM(new ElementObj("section", "menu__container"));
 
+const mainMenuContainer = ElementObj.createDOM(new ElementObj("div", "main__container"));
+const mainMenu = createMenu(mainMenuData);
+const mainMenuImgElement = ElementImg.createDOM(new ElementImg("img", "menu__img", "", mainMenuImg, 'Main course menu'));
+
 
 
 const createMenuPage = function createMenuPageWithinTheContent() {
