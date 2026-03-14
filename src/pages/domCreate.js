@@ -24,5 +24,20 @@ class ElementObj {
     }
 }
 
+class ElementImg extends ElementObj {
+    constructor(elType, elClass, elText, elSrc, elAlt) {
+        super(elType, elClass, elText);
+        this.elSrc = elSrc;
+        this.elAlt = elAlt;
+    }
 
-export { mainNodes, ElementObj };
+    static createDOM(el) {
+        const element = super.createDOM(el);
+        element.src = el.elSrc;
+        element.alt = el.elAlt;
+        return element;
+    }
+}
+
+
+export { mainNodes, ElementObj, ElementImg };
