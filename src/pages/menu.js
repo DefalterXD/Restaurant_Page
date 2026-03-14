@@ -95,8 +95,13 @@ const desertMenuImgElement = ElementImg.createDOM(new ElementImg("img", "menu__i
 const createMenuPage = function createMenuPageWithinTheContent() {
     mainNodes.body.style.backgroundImage = '';
 
+    mainMenuContainer.appendChild(mainMenu);
+    drinkMenuContainer.appendChild(drinkMenu);
+    desertMenuContainer.appendChild(desertMenu);
     
+    menu.append(mainMenuContainer, mainMenuImgElement, drinkMenuImgElement, drinkMenuContainer, desertMenuContainer, desertMenuImgElement);
     
+    mainNodes.content.divContent.append(menuTitle, menu);
 }
 
 export { createMenuPage };
