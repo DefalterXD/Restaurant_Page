@@ -27,4 +27,4 @@ In this project I learned:
 
 ## References:
 
-All images was from the freepik of unsplash.
+All images was from the freepik or unsplash.
